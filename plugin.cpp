@@ -26,7 +26,7 @@ using namespace std;
 			"\"type\" : \"string\", \"default\" : \"" PLUGIN_NAME "\", \"readonly\": \"true\" }, " \
 		"\"asset\" : { \"description\" : \"Asset name\", " \
 			"\"type\" : \"string\", \"default\" : \"Expression\", " \
-			"\"order\": \"1\", \"displayName\": \"Asset Name\" }," \
+			"\"order\": \"1\", \"displayName\": \"Asset Name\", \"mandatory\": \"true\" }," \
 		"\"expression\" : { \"description\" : \"Expression to evaluate\", " \
 			"\"type\" : \"string\", \"default\" : \"clamp(-1.0,sin(2 * pi * x) + cos(x / 2 * pi),+1.0)\", " \
 			"\"order\": \"2\", \"displayName\": \"Expression\" }," \
