@@ -43,6 +43,7 @@ if (FLEDGE_SRC)
 		get_filename_component(_ITEM_PATH ${_ITEM} DIRECTORY)
 		list(APPEND FLEDGE_INCLUDE_DIRS ${_ITEM_PATH})
 	endforeach()
+	list(APPEND FLEDGE_INCLUDE_DIRS "${FLEDGE_SRC}/C/thirdparty/rapidjson/include")
 	unset(INCLUDE_LIST CACHE)
 
 	list(REMOVE_DUPLICATES FLEDGE_INCLUDE_DIRS)
